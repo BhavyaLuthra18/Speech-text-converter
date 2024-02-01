@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Libre+Baskerville&family=Merriweather:wght@700&family=Work+Sans&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Work sans",sans-serif;
+  background-color:rgb(216, 247, 216);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  align-self: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+html{
+  color:rgb(96 101 123);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2{
+  color:rgb(43 45 56);
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: -0.2px;
+  font-family:  "Merriweather" ,serif;
+}
+
+p{
+  max-width: 50rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+
+.container {
+  padding:40px;
+  margin-top: 80px;
+}
+.main-content{
+  max-width:200rem;
+  width:100%;
+  min-height:450px;
+  height:auto;
+  position:relative;
+  padding: 18px 18px 120px 18px;
+  border-radius: 18px;
+  background-color: rgb(255,255,255);
+  border: 0.5px solid rgb(231 233 245);
+  box-shadow:  0 12px 48px 0px rgb(109 117 141 /20%);
+}
+
+.main-content:focus{
+  border: 0.3px solid rgb(43,43,56,0.3)
+}
+
+.btn-style {
+  display: flex;
+}
+
+img {
+  width:80px;
+  height:80px;
   }
-  to {
-    transform: rotate(360deg);
+button {
+   padding:16px 10px;
+   border:none;
+   background-color: aqua;
+   color:rgb(0, 0, 0);
+   font-size:20px;
+   letter-spacing:1px;
+   margin:auto;
+   position: relative;
+   border-radius: 10px;
+  margin:auto;
+  display: flex;
+  margin-top: -80px;
+   font-weight: 600;
+   cursor:pointer;
+}
+
+button:focus,button:hover{
+  background: rgb(20, 210, 210);
+  box-shadow:  0 5px 30px 0 rgba(0,0,0,0.1);
+}
+
+
+@media screen and (max-width:768px){
+.container {
+  margin-top:20px;
+}
+
+h2{
+  font-size: 20px;
+  user-select: none;
+}
+
+img {
+  width:40px;
+  height:40px;
+  user-select: none;
   }
+.main-content{
+  font-size: 16px;
+  white-space: normal;
+}
+
+
+button{
+  padding:6px 6px;
+  font-size: 16px;
+  margin-top: -70px;
+}
+}
+
+
+@media screen and (max-width:480px){
+  button{
+    padding:8px 8px;
+    font-size: 10px;
+    margin-top: -50px;
+  } 
 }
