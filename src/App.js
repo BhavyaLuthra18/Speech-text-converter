@@ -43,26 +43,29 @@ const App = () => {
   return (
     <>
       <div className="container">
-  
         <h2>
-        <img src="images/mic.png"/>
-          Speech to Text Converter</h2>
-     
+          <img src="images/mic.png" alt="mic" />
+          Speech to Text Converter
+        </h2>
+
         <br />
-        <p>With speech to text, a user can convert any audio note into textual content quickly.</p>
+        <p>
+          With speech to text, a user can convert any audio note into textual
+          content quickly.
+        </p>
         <div className="main-content" onClick={() => setTextToCopy(transcript)}>
           {transcript}
         </div>
-        <div className="btn-style">
-          <button onClick={handleCopyToClipboard}>
-            {isCopied ? "Copied!" : "Copy to clipboard"}
-          </button>
+      </div>
+      <div className="btn-style">
+        <button onClick={handleCopyToClipboard}>
+          {isCopied ? "Copied!" : "Copy to clipboard"}
+        </button>
 
-          <button onClick={startListening}>Start Listening</button>
-          <button onClick={SpeechRecognition.stopListening}>
-            Stop Listening
-          </button>
-        </div>
+        <button onClick={startListening}>Start Listening</button>
+        <button onClick={SpeechRecognition.stopListening}>
+          Stop Listening
+        </button>
       </div>
     </>
   );
