@@ -92,6 +92,7 @@ button:hover {
   h2 {
     font-size: 20px;
     user-select: none;
+    white-space: nowrap;
   }
 
   img {
@@ -126,9 +127,20 @@ button:hover {
   }
   button {
     border: none;
-    padding: 8px;
-    font-size: 8px;
+    padding: 6px;
+    font-size: 7px;
     margin-top: -20px;
     border-radius: 4px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  h2 {
+    font-size: 16px;
+    user-select: none;
+    white-space: nowrap;
   }
 }
